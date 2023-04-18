@@ -4,94 +4,136 @@
     padding: 0;
 }
 
-body{
-    display: grid;
-    place-items: center;
-    
-}
+/* body{
+     overflow: hidden; 
+} */
 
-.snakegame{
+ .snakegame{
     display: flex;
-    
-}
-
-.dies1{
-    width: 60px;
-    height: 60px;
-    border: 1px solid black;
-    border-radius: 50%;
-}
-
-.dies2{
-    width: 60px;
-    height: 60px;
-    border: 1px solid black;
-    border-radius: 50%;
-}
-
-.demo1{
-    width: 60px;
-    height: 60px;
-    background: rgb(114, 224, 12);
-    border-radius: 50%;
-    text-align: center;
-    font-size: 30px;
-    padding: 12px;
-    margin-top: 40px;
-}
-
-.demo2{
-    width: 60px;
-    height: 60px;
-    background: rgb(201, 14, 101);
-    border-radius: 50%;
-    text-align: center;
-    font-size: 30px;
-    padding: 12px;
-    margin-top: 40px;
-}
-.Buttons{
-    padding: 30px;
-    margin: 30px;
-    background-color: rgb(238, 102, 102);
-    border-radius: 30px;
-    
-}
-.Player-Button{
-    margin-top: 100px;
- 
-    
-}
-
-
-
-.grid-container{
-    display: grid;
-    grid-template-columns: repeat(10,1fr);
-    margin-top: 15px;
-
-}
-
-.box:nth-child(odd){
-    background-color: rgb(247, 228, 222);
-}
-
-.box:nth-child(even){
-    background-color: rgb(243, 159, 62);
-}
-
-.box:nth-child(3){
-    background-color: rgb(168, 248, 224);
-}
-
-.box{
-    display: flex;
-    border: 1px solid rgb(17, 17, 17);
+    align-items: center;
     justify-content: center;
+    margin-top: 10px;
+ }
+
+ .box{
+    display: flex;
+    border: 1px solid black;
+    /* justify-content: center; */
     align-items: center;
     height: 60px;
-    width: 100px;
-    
+    width: 60px;
+    opacity: 0;
 }
+
+.player{
+    width: 60px;
+    height: 60px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.demo1,.demo3{
+    width: 60px;
+    height: 60px;
+    background: red;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    padding: 12px;
+    margin-top: 20px;
+}
+.demo3{
+    background-color: green;
+}
+.demo2,.demo4{
+    width: 60px;
+    height: 60px;
+    background: yellow;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    padding: 12px;
+    margin-top: 20px;
+}
+.demo4{
+    background-color: blue;
+}
+
+
+.buttons{
+    padding: 30px;
+    margin: 30px;
+    /* background-color: rgb(238, 102, 102); */
+    border-radius: 30px;
+    height: 100%;
+}
+
+.player-button1{
+    margin-bottom: 150px;
+}
+
+#toy1{
+    border: 1px solid black;
+    background-color: red;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    z-index: 1;
+    bottom: 30px;
+    left: 210px;
+}
+
+#toy2{
+    border: 1px solid black;
+    background-color: yellow;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    z-index: 1;
+    bottom: 30px;
+    left: 200px;
+}
+
+/* #toy3{
+    border: 1px solid black;
+    background-color: green;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    z-index: 1;
+    bottom: 30px;
+    left: 210px;
+}
+
+#toy4{
+    border: 1px solid black;
+    background-color: blue;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    z-index: 1;
+    bottom: 30px;
+    left: 210px;
+} */
+
+.container{
+    background-image: url('assets/snakes-ladders-image.png');
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    /* width: 100%; */
+    width: 600px;
+    height: 100%;
+    background-size: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+
+
 
 
